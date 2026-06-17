@@ -1,0 +1,17 @@
+# Use official lightweight Python image
+FROM python:3.11-slim
+
+# Allow statements and buffering to be logged immediately
+ENV PYTHONUNBUFFERED True
+
+# Copy local code to container image
+ENV APP_HOME /app
+WORKDIR $APP_HOME
+COPY . ./
+
+# Install production dependencies
+RUN pip install --no-cache-dir -r requirements.txt
+
+# Run the web service on container startup.
+# Using Gunicorn or Flask's development server if needed (making it simple)
+CMD ["python", "app.py"]

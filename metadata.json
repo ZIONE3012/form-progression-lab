@@ -1,0 +1,6 @@
+{
+  "name": "Form & Progression Lab",
+  "description": "An elite personal trainer chatbot that personalizes workouts based on physical, environmental, and mental constraints.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
